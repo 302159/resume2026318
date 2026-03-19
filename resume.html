@@ -18,10 +18,21 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
+        /* ⭐ 改成左右排版 */
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
             border-bottom: 2px solid #333;
             padding-bottom: 20px;
+        }
+
+        /* ⭐ 照片樣式 */
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
         header h1 {
@@ -30,6 +41,7 @@
         }
 
         header p {
+            margin: 5px 0 0;
             color: #666;
         }
 
@@ -81,8 +93,13 @@
 
 <div class="container">
     <header>
-        <h1>溫心芸</h1>
-        <p>室內設計系一年級學生</p>
+        <!-- ⭐ 這裡是照片 -->
+        <img src="images/225701.jpg" alt="個人照片">
+
+        <div>
+            <h1>溫心芸</h1>
+            <p>室內設計系一年級學生</p>
+        </div>
     </header>
 
     <section class="info">
